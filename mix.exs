@@ -44,12 +44,12 @@ defmodule Hcaptcha.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 1.8"},
-      {:jason, "~> 1.0", optional: true},
-      {:credo, "~> 1.0", only: [:dev, :test], runtime: false},
-      {:ex_doc, "0.19.3", only: :dev},
-      {:dialyxir, "~> 0.5", only: [:dev]},
-      {:excoveralls, "~> 0.7.1", only: :test}
+      {:httpoison, "~> 2.2"},
+      {:jason, "~> 1.4", optional: true},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:ex_doc, "0.34.2", only: :dev},
+      {:dialyxir, "~> 1.4", only: [:dev]},
+      {:excoveralls, "~> 0.18.2", only: :test}
     ]
   end
 
@@ -58,7 +58,10 @@ defmodule Hcaptcha.Mixfile do
       files: ["lib", "mix.exs", "README.md", "LICENSE"],
       maintainers: ["Sebastian Grebe"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/Sebi55/hcaptcha", "Forked" => "https://github.com/samueljseay/recaptcha"}
+      links: %{
+        "GitHub" => "https://github.com/Sebi55/hcaptcha",
+        "Forked" => "https://github.com/samueljseay/recaptcha"
+      }
     ]
   end
 end
