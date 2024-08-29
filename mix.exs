@@ -6,7 +6,7 @@ defmodule Hcaptcha.Mixfile do
       app: :hcaptcha,
       name: "hcaptcha",
       source_url: "https://github.com/Sebi55/hcaptcha",
-      version: "0.0.2",
+      version: "0.0.3",
       elixir: "~> 1.6",
       description: description(),
       deps: deps(),
