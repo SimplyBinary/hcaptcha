@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 config :hcaptcha,
   verify_url: "https://hcaptcha.com/siteverify",
@@ -8,4 +8,4 @@ config :hcaptcha,
 
 config :hcaptcha, :json_library, Jason
 
-import_config "#{Mix.env()}.exs"
+import_config "#{config_env()}.exs"
